@@ -1,0 +1,9 @@
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background: $clr-primary-10;
+  color: $clr-primary-3;
+  font-size: calc(32px + 10 * ((100vw - 480px) / (1920 - 480)));
+}

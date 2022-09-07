@@ -1,0 +1,30 @@
+@mixin effect-line($color) {
+  background-image: linear-gradient(to right, $color 0, $color 100%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 2px;
+  &:hover {
+    background-size: 100% 2px;
+    transition-duration: 0.3s;
+  }
+}
+
+@mixin tick($left, $top, $color) {
+  &::before {
+    content: '';
+    position: absolute;
+    transform: rotate(35deg);
+    left: $left;
+    top: $top;
+    width: 3px;
+    height: 6px;
+    border: solid 2px $color;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@mixin simple-shadow($x, $y, $blur, $stretching, $color) {
+  box-shadow: (-$x) (-$y) $blur $stretching $color,
+    $x $y $blur $stretching $color;
+}
