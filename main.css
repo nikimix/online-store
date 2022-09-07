@@ -1,0 +1,306 @@
+html{height:100%;box-sizing:border-box}label,input{cursor:pointer;width:fit-content}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;font-size:.875rem;color:#102a42;line-height:1.5}ul{margin:0;padding:0;list-style:none}a{text-decoration:none}img{display:block;max-width:100%;height:auto}fieldset{margin:0;padding:0;border:none}.wrapper{max-width:1170px;margin:auto;padding:0 4rem}.nav{display:flex;align-items:center;justify-content:space-between;height:5rem}.nav__list{display:flex}.nav__item{margin:0 .5rem}.nav__link{padding:.5rem;background-image:linear-gradient(to right, #c5a491 0, #c5a491 100%);background-repeat:no-repeat;background-position:left bottom;background-size:0 2px;font-size:1rem;letter-spacing:.1rem;color:#324d67}.nav__link:hover{background-size:100% 2px;transition-duration:.3s}.nav__cart{position:relative;display:flex;align-items:center;font-size:1.5rem;letter-spacing:.1rem;color:#102a42;transition:.3s}.nav__cart:hover{color:#617d98}.nav__cart-icon{margin-left:5px;margin-right:16px}.nav__cart-value{position:absolute;top:-10px;right:0;display:flex;justify-content:center;align-items:center;box-sizing:border-box;width:16px;height:16px;border-radius:50%;padding:12px;background:#ab7a5f;font-size:.75rem;color:#fff}.main-title{display:flex;justify-content:center;align-items:center;min-height:20vh;background:#eaded7;color:#795744;font-size:calc(32px + 10*(100vw - 480px)/1440)}.content-wrapper{display:grid;grid-template-columns:auto 1fr;column-gap:1.5rem;padding-top:4rem;padding-bottom:4rem}@media(max-width: 980px){.content-wrapper{row-gap:3rem;grid-template-columns:none}}.filter{display:flex;flex-direction:column;row-gap:1.25rem}.legend{margin-bottom:.5rem;padding:0;text-transform:capitalize;line-height:1.25;font-size:1rem;font-weight:700;letter-spacing:.1rem}.label{display:flex}.input{display:none}.material__filters-wrapper{padding-left:1rem}.input-search{padding:.5rem;border-radius:.25rem;border:none;background:#f1f5f8;letter-spacing:.1rem;outline:none}.input-search:hover{box-shadow:-1px -1px 3px 0 #829ab0,1px 1px 3px 0 #829ab0}.input-search:focus{box-shadow:-1px -1px 3px 0 #829ab0,1px 1px 3px 0 #829ab0}.manufacturer__label,.material__label{position:relative;padding:.25rem 0px;text-transform:capitalize;letter-spacing:.1rem;color:#617d98;transition:.3s}.manufacturer__label:hover,.material__label:hover{color:#9eb2c7}.input:checked+.material__label::before,.input:checked+.manufacturer__label::before{content:"";position:absolute;transform:rotate(35deg);left:calc(100% + .5rem);top:25%;width:3px;height:6px;border:solid 2px lime;border-top-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0)}.color{display:flex}.color__filters-wrapper{display:flex;column-gap:.3rem}.input:checked+.color__label{opacity:1}.input:checked+.color__label::before{content:"";position:absolute;transform:rotate(35deg);left:4px;top:1px;width:3px;height:6px;border:solid 2px #fff;border-top-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0)}.color__label{position:relative;width:1rem;height:1rem;border-radius:50%;opacity:.5;transition-duration:.3s}.color__label:hover{opacity:1}.color__label--brown{background-color:#795548}.color__label--sand{background-color:#dfcaa0}.color__label--grey{background-color:#b5b8b1}.color__label--yellow{background-color:#ffb900}.color__label--green{background-color:lime}.color__label--blue{background-color:blue}.color__label--black{background-color:#222}.value-wrapper{display:flex;width:85%;justify-content:space-between}.value{margin:0;margin-bottom:.25rem;font-size:1rem;color:#48647f}.popular{display:flex;align-items:center;text-transform:capitalize;font-size:1rem;color:#48647f}.popular__label:hover{color:#9eb2c7}.popular__input{margin:0;margin-left:3rem;height:1rem;width:1rem;outline-color:#f1f5f8;cursor:pointer}.btn-reset{width:fit-content;padding:.3rem 1rem;font-size:1rem;background-color:red;color:#fff;border-radius:.2rem;border:none;cursor:pointer;opacity:.7;transition:.3s}.btn-reset:hover{opacity:1}@media(max-width: 980px){.filter__range{width:30%}}.product-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;margin-bottom:2rem;column-gap:2rem}@media(max-width: 980px){.product-header{row-gap:.75rem;grid-template-columns:auto}}.btns-layout-wrapper{display:flex;column-gap:.5rem}.btn-layout{display:flex;justify-content:center;align-items:center;height:1.5rem;width:1.5rem;padding:0;border-radius:.25rem;border:1px solid #222;cursor:pointer}.btn-layout:hover{box-shadow:-1px -1px 3px 0 #617d98,1px 1px 3px 0 #617d98}.btn-layout--tile{background:#222;color:#fff}.btn-layout--order{background:rgba(0,0,0,0);color:#222}.product-header__info{text-transform:capitalize;margin:0;color:#324d67;font-size:1rem}.product-header__break-line{border:none;border-top:1px solid #bcccdc;width:100%}.sort__label{font-size:1rem;text-transform:capitalize;color:#324d67}.sort__select{border-color:rgba(0,0,0,0);font-size:1rem;text-transform:capitalize;padding:.25rem .5rem;color:#324d67;outline:none;border-radius:.2rem;cursor:pointer}.sort__select:hover{box-shadow:-1px -1px 3px 0 #829ab0,1px 1px 3px 0 #829ab0}.sort__select:focus{box-shadow:-1px -1px 3px 0 #829ab0,1px 1px 3px 0 #829ab0}.cards{display:grid;grid-template-columns:repeat(3, 1fr);gap:2rem 1.5rem}@media(max-width: 1200px){.cards{grid-template-columns:repeat(2, 1fr)}}.card{position:relative}.card:hover .card__features{transition-duration:.4s;opacity:.95;background-color:#324d67;border-radius:.25rem}.card--added::before{content:"";position:absolute;top:.3rem;right:.3rem;width:2rem;height:2rem;background-repeat:no-repeat;background-image:url(assets/images/icons8-ok.svg);z-index:2}.card-wrapper{position:relative}.card__img{border-radius:.25rem}.card__features{position:absolute;top:0;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-around;padding:1rem;width:100%;height:100%;border-radius:.25rem;opacity:0}.card-feature{display:flex;align-items:center;column-gap:.5rem;margin:0;text-transform:capitalize;font-size:1rem;color:#fff}.card__buttons-wrapper{display:flex;justify-content:space-around}.card__btn{padding:0;width:2rem;height:2rem;border:none;background-repeat:no-repeat;background-color:rgba(0,0,0,0);cursor:pointer;transition-duration:.3s}.card__btn--add{background-image:url(assets/images/add.svg)}.card__btn--remove{background-image:url(assets/images/remove.svg)}.card__btn:hover{transform:scale(1.2)}.card__info{display:flex;justify-content:space-between;font-weight:400;font-size:1rem;letter-spacing:.1rem;text-transform:capitalize;line-height:1.25}.card__info--price{margin-left:auto;color:#ab7a5f}.card__color{display:inline-block;width:.8rem;height:.8rem;border-radius:50%}.card__color--blue{background-color:blue}.card__color--brown{background-color:#795548}.card__color--sand{background-color:#dfcaa0}.card__color--grey{background-color:#b5b8b1}.card__color--yellow{background-color:#ffb900}.card__color--green{background-color:lime}.card__color--black{background-color:#222}.noUi-target.noUi-ltr.noUi-horizontal{width:80%;height:6px;cursor:pointer;border:solid 1px #dae2ec;border-radius:9px;box-sizing:content-box}.noUi-target .noUi-base .noUi-origin .noUi-handle-lower,.noUi-target .noUi-base .noUi-origin .noUi-handle-upper{height:13px;width:13px;top:-3px;right:-6px;border-radius:9px;cursor:pointer;transition:.2s}.noUi-target .noUi-base .noUi-origin .noUi-handle-lower::before,.noUi-target .noUi-base .noUi-origin .noUi-handle-lower::after,.noUi-target .noUi-base .noUi-origin .noUi-handle-upper::before,.noUi-target .noUi-base .noUi-origin .noUi-handle-upper::after{display:none}.noUi-target .noUi-base .noUi-origin .noUi-handle-lower:hover,.noUi-target .noUi-base .noUi-origin .noUi-handle-upper:hover{transform:scale(1.2)}.noUi-target .noUi-touch-area{width:1rem;height:1rem;transform:translateY(-3px)}.noUi-target .noUi-connects .noUi-connect:hover{background:#2fd1c6}.max-slots{display:flex;align-items:center;justify-content:center;position:fixed;font-size:3rem;top:50%;left:50%;transform:translate(-50%, -50%);z-index:10;color:#fff;width:100%;height:100%;background-color:#102a42;opacity:.9}.no-cards{font-size:2rem;color:#617d98}.footer{background-color:#222;height:5rem}.footer__wrapper{box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;height:100%;max-height:100%;padding:1rem;color:#f1f5f8;font-size:1rem}.footer__author{color:#f1f5f8;transition:.3s}.footer__author:hover{color:#d1b6a8}.footer__copyright{color:#d1b6a8}.footer__school-logo{color:#fff;transition:.3s}.footer__school-logo:hover{fill:#d1b6a8}
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-target {
+  position: relative;
+}
+.noUi-base,
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+/* Wrapper for all connect elements.
+ */
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+}
+/* Offset direction
+ */
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto;
+}
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.noUi-vertical .noUi-origin {
+  top: -100%;
+  width: 0;
+}
+.noUi-horizontal .noUi-origin {
+  height: 0;
+}
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 18px;
+}
+.noUi-horizontal .noUi-handle {
+  width: 34px;
+  height: 28px;
+  right: -17px;
+  top: -6px;
+}
+.noUi-vertical {
+  width: 18px;
+}
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  right: -6px;
+  bottom: -17px;
+}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.noUi-target {
+  background: #FAFAFA;
+  border-radius: 4px;
+  border: 1px solid #D3D3D3;
+  box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+.noUi-connects {
+  border-radius: 3px;
+}
+.noUi-connect {
+  background: #3FB8AF;
+}
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: ew-resize;
+}
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+.noUi-handle {
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #FFF;
+  cursor: default;
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+}
+.noUi-active {
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+}
+/* Handle stripes;
+ */
+.noUi-handle:before,
+.noUi-handle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 1px;
+  background: #E8E7E6;
+  left: 14px;
+  top: 6px;
+}
+.noUi-handle:after {
+  left: 17px;
+}
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+  width: 14px;
+  height: 1px;
+  left: 6px;
+  top: 14px;
+}
+.noUi-vertical .noUi-handle:after {
+  top: 17px;
+}
+/* Disabled state;
+ */
+[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-pips {
+  position: absolute;
+  color: #999;
+}
+/* Values;
+ *
+ */
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+/* Markings;
+ *
+ */
+.noUi-marker {
+  position: absolute;
+  background: #CCC;
+}
+.noUi-marker-sub {
+  background: #AAA;
+}
+.noUi-marker-large {
+  background: #AAA;
+}
+/* Horizontal layout;
+ *
+ */
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px;
+}
+/* Vertical layout;
+ *
+ */
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+.noUi-value-vertical {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-left: 25px;
+}
+.noUi-rtl .noUi-value-vertical {
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+}
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px;
+}
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 120%;
+}
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 120%;
+}
+.noUi-horizontal .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  left: auto;
+  bottom: 10px;
+}
+.noUi-vertical .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(0, -18px);
+  transform: translate(0, -18px);
+  top: auto;
+  right: 28px;
+}
+
