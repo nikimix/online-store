@@ -4,7 +4,7 @@
 
 Online store.
 
-- app development in TypeScript
+- an app is developed in TypeScript
 
 [Pull Request](https://github.com/nikimix/online-store/pull/1)
 
