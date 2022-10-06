@@ -4,8 +4,6 @@
 
 Online store where products have the following functionality: filtering, sorting, searching, adding to cart
 
-**In this task, I learned:**
-
 - app development in TypeScript
 
 [Pull Request](https://github.com/nikimix/online-store/pull/1)
