@@ -1,0 +1,131 @@
+.card {
+  position: relative;
+
+  &:hover .card__features {
+    transition-duration: 0.4s;
+    opacity: 0.95;
+    background-color: $clr-grey-3;
+    border-radius: $radius;
+  }
+
+  &--added::before {
+    content: '';
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-image: url('./assets/images/icons8-ok.svg');
+    z-index: 2;
+  }
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card__img {
+  border-radius: $radius;
+}
+
+.card__features {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: $radius;
+  opacity: 0;
+}
+
+.card-feature {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: $clr-white;
+}
+
+.card__buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__btn {
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &--add {
+    background-image: url('./assets/images/add.svg');
+  }
+
+  &--remove {
+    background-image: url('./assets/images/remove.svg');
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: $spacing;
+  text-transform: capitalize;
+  line-height: 1.25;
+}
+
+.card__info--price {
+  margin-left: auto;
+  color: $clr-primary-5;
+}
+
+.card__color {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+
+  &--blue {
+    background-color: $clr-blue;
+  }
+
+  &--brown {
+    background-color: $clr-brown;
+  }
+
+  &--sand {
+    background-color: $clr-sand;
+  }
+
+  &--grey {
+    background-color: $clr-grey;
+  }
+
+  &--yellow {
+    background-color: $clr-yellow;
+  }
+
+  &--green {
+    background-color: $clr-green;
+  }
+  &--black {
+    background-color: $clr-black;
+  }
+}
